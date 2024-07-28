@@ -1,0 +1,10 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+
+{% block content %}
+<h2>Ingredient List</h2>
+<ul>
+    {% for ingredient in ingredients %}
+        <li>{{ ingredient.name }} - {{ ingredient.quantity }}</li>        
+    {% endfor %}
+</ul>
+{% endblock %}
